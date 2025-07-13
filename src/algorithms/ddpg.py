@@ -34,23 +34,24 @@ Author: REL Project Team
 Date: 2025-07-13
 """
 
+import os
+import sys
+from collections import defaultdict
+from typing import Any, Dict
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import numpy as np
 import yaml
-import os
-from typing import Dict, Any
-from collections import defaultdict
 
-import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
+from buffers.replay_buffer import ReplayBuffer
 from networks.policy_network import PolicyNetwork
 from networks.q_network import QNetwork
-from buffers.replay_buffer import ReplayBuffer
-from utils.noise import OrnsteinUhlenbeckNoise
 from utils.logger import Logger
+from utils.noise import OrnsteinUhlenbeckNoise
 
 
 class DDPGAgent:
