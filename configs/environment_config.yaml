@@ -1,0 +1,44 @@
+# Environment Configuration for DQN on CartPole
+# This demonstrates how environment wrapper parameters can be configured via YAML
+
+environment:
+  env_id: "CartPole-v1"
+  wrapper_type: "StandardEnvironmentWrapper"
+  
+  # Wrapper-specific parameters
+  normalize_obs: false
+  normalize_rewards: false
+  clip_actions: true
+  reward_scale: 1.0
+  
+  # Environment creation parameters
+  render_mode: null
+  max_episode_steps: 500
+  
+  # Reproducibility
+  seed: 42
+
+# Algorithm-specific parameters (DQN)
+algorithm:
+  name: "DQN"
+  learning_rate: 0.001
+  discount_factor: 0.99
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  
+# Training parameters
+training:
+  total_timesteps: 100000
+  buffer_size: 10000
+  batch_size: 32
+  learning_starts: 1000
+  train_freq: 4
+  target_update_freq: 1000
+  
+# Logging and evaluation
+logging:
+  log_interval: 1000
+  eval_freq: 5000
+  eval_episodes: 10
+  save_freq: 10000

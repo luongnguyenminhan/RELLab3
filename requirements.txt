@@ -2,7 +2,8 @@
 
 torch
 numpy
-gym
+gymnasium
+gym  # For backward compatibility
 PyYAML
 matplotlib
 tensorboard

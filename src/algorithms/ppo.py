@@ -31,18 +31,19 @@ Author: REL Project Team
 Date: 2025-07-13
 """
 
+import os
+import sys
+from collections import defaultdict
+from typing import Any, Dict, Union
+
+import numpy as np
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import torch.nn.functional as F
-from torch.distributions import Categorical, Normal
-import numpy as np
+import torch.optim as optim
 import yaml
-import os
-from typing import Dict, Any, Union
-from collections import defaultdict
+from torch.distributions import Categorical, Normal
 
-import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from networks.policy_network import PolicyNetwork
