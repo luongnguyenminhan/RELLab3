@@ -1,0 +1,21 @@
+"""
+DDPG Configuration File.
+
+This YAML file contains the hyperparameters for the Deep Deterministic Policy Gradient (DDPG) algorithm, as implemented in the Modular DRL Framework and described in "Deep Reinforcement Learning: A Survey" by Wang et al.
+
+Key Concepts/Parameters:
+- Learning rate, discount factor (gamma), batch size
+- Actor and Critic network architectures
+- Soft target update (tau)
+- Ornstein-Uhlenbeck noise parameters
+- Experience Replay buffer settings
+
+Expected Usage:
+- Loaded by src/algorithms/ddpg.py and related modules
+- Supports reproducibility and experiment management
+
+Format: YAML
+Author: REL Project Team
+Date: 2025-07-13
+"""
+# DDPG config placeholder

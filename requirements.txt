@@ -1,0 +1,11 @@
+# requirements.txt for Modular DRL Framework
+
+torch
+numpy
+gym
+PyYAML
+matplotlib
+tensorboard
+tqdm
+# Optional: seaborn for advanced visualization
+seaborn

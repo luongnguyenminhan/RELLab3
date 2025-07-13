@@ -1,0 +1,20 @@
+"""
+PPO Configuration File.
+
+This YAML file specifies the hyperparameters for the Proximal Policy Optimization (PPO) algorithm, as implemented in the Modular DRL Framework and described in "Deep Reinforcement Learning: A Survey" by Wang et al.
+
+Key Concepts/Parameters:
+- Learning rate, discount factor (gamma), batch size
+- Clipped objective/trust region parameters
+- Advantage estimation settings
+- Policy and value network architectures
+
+Expected Usage:
+- Loaded by src/algorithms/ppo.py and related modules
+- Ensures reproducibility and easy experiment configuration
+
+Format: YAML
+Author: REL Project Team
+Date: 2025-07-13
+"""
+# PPO config placeholder

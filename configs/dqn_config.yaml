@@ -1,0 +1,20 @@
+"""
+DQN Configuration File.
+
+This YAML file defines the hyperparameters for the Deep Q-Network (DQN) algorithm, as described in the Modular DRL Framework blueprint based on "Deep Reinforcement Learning: A Survey" by Wang et al.
+
+Key Concepts/Parameters:
+- Learning rate, discount factor (gamma), batch size
+- Experience Replay buffer settings
+- Target Network update frequency
+- ϵ-greedy exploration parameters
+
+Expected Usage:
+- Loaded by src/algorithms/dqn.py and related modules
+- Supports reproducibility and experiment tracking
+
+Format: YAML
+Author: REL Project Team
+Date: 2025-07-13
+"""
+# DQN config placeholder
